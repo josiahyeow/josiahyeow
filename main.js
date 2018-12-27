@@ -5,8 +5,8 @@ var app = new Vue({
         github: 'https://github.com/josiahyeow',
         email: 'jsiahyeow@gmail.com',
         apps: [
-            {name: 'PocketLint', image: './images/pocketlint-icon.png', url:'#', type: 'iOS', desc: 'Image Scanner App'},
-            {name: 'Flush', image: './images/flush-icon.png', url:'#', type: 'Android', desc: 'Task manager App'}
+            {name: 'PocketLint', image: './images/pocketlint-icon.png', url:'https://github.com/josiahyeow/PocketLint', type: 'iOS', desc: 'Image Scanner App'},
+            {name: 'Flush', image: './images/flush-icon.png', url:'https://devpost.com/software/flush-d69mqj', type: 'Android', desc: 'Task manager App'}
         ],
         designs: [
             {name: 'Property Search', image: './images/property-screens.png', desc: ''},
