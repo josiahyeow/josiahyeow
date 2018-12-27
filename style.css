@@ -31,7 +31,10 @@ body {
 
 .console {
     font-family: 'Inconsolata', monospace;
-    font-size: 110%;
+    font-size: 105%;
+    background-color:  rgba(0,0,0,.1);
+    border-radius: 5px;
+    padding: 5px;
 }
 
 .divider::after {
@@ -73,7 +76,7 @@ a:hover {
 
 
 .sidebar {
-    height: auto;
+    padding-bottom: 64px;
 }
 
 h2 {
@@ -120,4 +123,9 @@ img.icon:hover {
     box-shadow: 0 10px 20px rgba(0, 0, 0, .1);
     transform: scale(1.01);
     transition: all .25s ease-in-out
+}
+
+footer p {
+    font-size: 14px;
+    margin: 0;
 }

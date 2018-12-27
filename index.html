@@ -20,10 +20,12 @@
                             <img src="./images/profile.jpg" alt="" class="profile">
                         </div>
                         <div class="subtitle pb-3">
+                            <span>🎂</span>
                             <span class="divider">{{age}}</span>
-                            <span class="divider">Software Engineer</span>
-                            <span class="divider">Designer</span>
-                            <span class="">Melbourne</span>
+                            <span>💻</span>
+                            <span class="console">Software Engineer</span>
+                            <span class="divider"></span>
+                            <span class="">🌆 Melbourne</span>
                         </div>
                         <div class="socials">
                             <a v-bind:href="linkedIn"><i class="fab fa-linkedin"></i></a>
@@ -32,22 +34,22 @@
                         </div>
                     </div>
                     <div class="sidebar">
-                        <h2 class="divider pb-4">apps</h2>
+                        <h2 class=" pb-4">📱 apps</h2>
                         <div class="apps-grid pt-4 pb-4 justify-content-center">
                             <a v-for="app in apps" class="icon" :href='app.url'><img :src="app.image" class="icon"></a>
                         </div>
 
-                        <h2 class="pt-5 divider pb-4">designs</h2>
+                        <h2 class="pt-5 pb-4">🎨 designs</h2>
                         <div class="designs-grid pt-4 justify-content-center">
                             <a v-for="design in designs" class="icon design" :href="design.image"><img :src="design.image" class="img-thumbnail"></a>
                         </div>
                     </div>
-                    
-                    <div class="footer">
-
-                    </div>
             </div>
         </div>
+        <footer>
+            <p>Built with Vue.js + jQuery</p>
+            <p>Josiah Yeow 2018</p>
+        </footer>
     </div>
 
     <script src="https://unpkg.com/vue"></script>
