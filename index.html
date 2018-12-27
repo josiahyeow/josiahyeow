@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Josiah Yeow | Software Engineer</title>
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
     <script src="https://unpkg.com/vue"></script>
@@ -12,10 +13,10 @@
 <body>
     <div id="app">
         <div class="container-fluid h-100">
-            <div class="row">
-                    <div class="col-lg-8">
+            <div class="">
+                    <div class="">
                         <div class="hero">
-                            <h1 class="title">Jos<span class="i">i</span>ah Yeow</h1>
+                            <h1 class="title"><span class="j">j</span>os<span class="i">i</span>ah yeow <img src="./images/profile.jpg" alt="" class="profile"></h1>
                             <div class="subtitle pb-3">
                                 <span class="divider">{{age}}</span>
                                 <span class="divider">Software Engineer</span>
@@ -25,17 +26,17 @@
                             <div class="socials">
                                 <a v-bind:href="linkedIn"><i class="fab fa-linkedin"></i></a>
                                 <a v-bind:href="github"><i class="fab fa-github"></i></a>
-                                <a v-bind:href="email"><i class="fas fa-envelope-square"></i></a>     
+                                <a v-bind:href="'mailto:' + email"><i class="fas fa-envelope-square"></i></a>     
                             </div>
                         </div>
                     </div>
-                    <div class="sidebar col-lg-4 p-5">
-                        <h2 class="divider">apps</h2>
-                        <div class="apps-grid pt-4 justify-content-center">
+                    <div class="sidebar">
+                        <h2 class="divider pb-4">apps</h2>
+                        <div class="apps-grid pt-4 pb-4 justify-content-center">
                             <a v-for="app in apps" class="icon" :href='app.url'><img :src="app.image" class="icon"></a>
                         </div>
 
-                        <h2 class="pt-5 divider">designs</h2>
+                        <h2 class="pt-5 divider pb-4">designs</h2>
                         <div class="designs-grid pt-4 justify-content-center">
                             <a v-for="design in designs" class="icon"><img :src="design.image" class="img-thumbnail"></a>
                         </div>
