@@ -22,5 +22,13 @@ var app = new Vue({
         }
     }
 })
+$(document).ready(function () {
+    $('.fadeInImage').hide();
+});
 
+$(window).on('load', function () {
+    $(".fadeInImage").each(function (i) {
+        $(this).delay((i + 1) * 100).fadeIn();
+    });
+});
 var lightbox = $('.designs-grid a').simpleLightbox();
