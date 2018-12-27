@@ -9,9 +9,9 @@ var app = new Vue({
             {name: 'Flush', image: './images/flush-icon.png', url:'https://devpost.com/software/flush-d69mqj', type: 'Android', desc: 'Task manager App'}
         ],
         designs: [
-            {name: 'Property Search', image: './images/property-screens.png', desc: ''},
-            {name: 'Real Estate', image: './images/realestate-screens.png', desc: ''},
-            {name: 'Flush Design', image: './images/flush-screens.png', desc: ''}
+            {name: 'Property Search', image: './images/property-screens.png', thumb: './images/thumbs/property-screens-thumb.png', desc: ''},
+            {name: 'Real Estate', image: './images/realestate-screens.png', thumb: './images/thumbs/realestate-screens-thumb.png', desc: ''},
+            {name: 'Flush Design', image: './images/flush-screens.png', thumb: './images/thumbs/flush-screens-thumb.png', desc: ''}
         ]
     },
     computed: {
