@@ -22,3 +22,5 @@ var app = new Vue({
         }
     }
 })
+
+var lightbox = $('.designs-grid a').simpleLightbox();

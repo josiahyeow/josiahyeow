@@ -4,30 +4,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Josiah Yeow | Software Engineer</title>
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
-    <script src="https://unpkg.com/vue"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link href="style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Heebo|Inconsolata|Rozha+One" rel="stylesheet">
     <script defer src="https://use.fontawesome.com/releases/v5.6.3/js/all.js" integrity="sha384-EIHISlAOj4zgYieurP0SdoiBYfGJKkgWedPHH4jCzpCXLmzVsw1ouK59MuUtP4a1" crossorigin="anonymous"></script>
+    <link href ="node_modules/simplelightbox/dist/simplelightbox.css" rel="stylesheet">
 </head>
 <body>
     <div id="app">
         <div class="container-fluid h-100">
             <div class="">
-                    <div class="">
-                        <div class="hero">
-                            <h1 class="title"><span class="j">j</span>os<span class="i">i</span>ah yeow <img src="./images/profile.jpg" alt="" class="profile"></h1>
-                            <div class="subtitle pb-3">
-                                <span class="divider">{{age}}</span>
-                                <span class="divider">Software Engineer</span>
-                                <span class="divider">Designer</span>
-                                <span class="">Melbourne</span>
-                            </div>
-                            <div class="socials">
-                                <a v-bind:href="linkedIn"><i class="fab fa-linkedin"></i></a>
-                                <a v-bind:href="github"><i class="fab fa-github"></i></a>
-                                <a v-bind:href="'mailto:' + email"><i class="fas fa-envelope-square"></i></a>     
-                            </div>
+                    <div class="hero">
+                        <div class="d-flex flex-wrap-reverse align-items-center">
+                            <h1 class="title pr-4"><span class="j">j</span>os<span class="i">i</span>ah yeow </h1>
+                            <img src="./images/profile.jpg" alt="" class="profile">
+                        </div>
+                        <div class="subtitle pb-3">
+                            <span class="divider">{{age}}</span>
+                            <span class="divider">Software Engineer</span>
+                            <span class="divider">Designer</span>
+                            <span class="">Melbourne</span>
+                        </div>
+                        <div class="socials">
+                            <a v-bind:href="linkedIn"><i class="fab fa-linkedin"></i></a>
+                            <a v-bind:href="github"><i class="fab fa-github"></i></a>
+                            <a v-bind:href="'mailto:' + email"><i class="fas fa-envelope-square"></i></a>
                         </div>
                     </div>
                     <div class="sidebar">
@@ -38,13 +39,20 @@
 
                         <h2 class="pt-5 divider pb-4">designs</h2>
                         <div class="designs-grid pt-4 justify-content-center">
-                            <a v-for="design in designs" class="icon"><img :src="design.image" class="img-thumbnail"></a>
+                            <a v-for="design in designs" class="icon design" :href="design.image"><img :src="design.image" class="img-thumbnail"></a>
                         </div>
+                    </div>
+                    
+                    <div class="footer">
+
                     </div>
             </div>
         </div>
     </div>
 
+    <script src="https://unpkg.com/vue"></script>
+    <script type="text/javascript" src="node_modules/jquery/dist/jquery.js"></script>
+    <script type="text/javascript" src="node_modules/simplelightbox/dist/simple-lightbox.js"></script>
     <script src="main.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
