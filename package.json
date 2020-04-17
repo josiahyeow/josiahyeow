@@ -13,6 +13,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "simplelightbox": "^1.15.1"
+    "simplelightbox": "^2.1.4"
   }
 }

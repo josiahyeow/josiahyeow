@@ -73,4 +73,4 @@ $(window).on("load", function () {
       .fadeIn();
   });
 });
-var lightbox = $(".designs-grid a").simpleLightbox();
+var lightbox = new SimpleLightbox(".designs-grid a", {});
