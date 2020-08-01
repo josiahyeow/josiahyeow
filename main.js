@@ -6,6 +6,13 @@ var app = new Vue({
     email: "jsiahyeow@gmail.com",
     apps: [
       {
+        name: "Simple Chat App",
+        image: "./images/simple-chat-app-icon.png",
+        url: "https://simple-chat-app-000.herokuapp.com",
+        type: "Javscript",
+        desc: "Dashboard for COVID-19 data",
+      },
+      {
         name: "COVID-19 Dashboard",
         image: "./images/covid-19-dashboard-icon.png",
         url: "https://josiahyeow.github.io/covid-19-dashboard",

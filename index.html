@@ -15,6 +15,7 @@
       href="https://fonts.googleapis.com/css?family=Heebo|Inconsolata|Rozha+One"
       rel="stylesheet"
     />
+    <link href="https://fonts.googleapis.com/css2?family=Vollkorn:wght@700&display=swap" rel="stylesheet"> 
     <script
       defer
       src="https://use.fontawesome.com/releases/v5.6.3/js/all.js"
@@ -52,14 +53,14 @@
         </div>
       </div>
       <div class="sidebar">
-        <h2 class="pb-4">📱 apps</h2>
+        <h2 class="pb-4">📱 <span class="heading">apps</span></h2>
         <div class="apps-grid pt-4 pb-4 justify-content-center">
           <a v-for="app in apps" class="icon fadeInImage" :href="app.url"
             ><img :src="app.image" class="icon"
           /></a>
         </div>
 
-        <h2 class="pt-5 pb-4">🎨 designs</h2>
+        <h2 class="pt-5 pb-4">🎨 <span class="heading">apps</span></h2>
         <div class="designs-grid pt-4 justify-content-center">
           <a
             v-for="design in designs"
